@@ -1,0 +1,77 @@
+header ul {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 30px;
+    list-style-type: none;
+}
+
+header {
+    background: radial-gradient(circle, rgba(19,19,19,1) 0%, black 100%);
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 1px;
+    transition-duration: .25s;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+header ul{
+    align-items: center;
+    justify-content: center;
+}
+
+header:hover{
+    border-width: 2px;
+}
+
+header li {
+    color: black;
+    text-shadow: 0px 0px 5px white;
+    font-size: 0.8em;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 5% 30px 5%;
+    transition-duration: 1s;
+}
+
+
+
+header a{
+	color:white;
+}
+
+header a:visited {
+    color: gray;
+    text-shadow: 0px 0px 5px black;
+}
+
+header li:hover {
+    font-size: 1.5em;
+    margin: 8px 3% 8px 3%;
+    color: white;
+}
+
+header li:first-child:hover{
+    margin-left: 4%;
+}
+
+ header li:last-child:hover {
+    margin-right: 4%;
+}
+
+.title{
+    display: block;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 0;
+}
+
+@font-face {
+    font-family: font;
+    src: url("OPTICopperplate-Heavy.otf")
+}
+body{
+    font-family: font;
+}

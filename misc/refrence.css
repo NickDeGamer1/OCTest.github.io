@@ -1,0 +1,27 @@
+body{
+	background-color:rgb(41,41,41);
+	color:white;
+}
+
+table{
+	border: 1px solid;
+	border-collapse: collapse;
+	color: white;
+	width: 100%;
+}
+
+td{
+	text-align: center;
+}
+
+img{
+	width: 200px;
+}
+
+#des{
+	overflow-wrap: break-word;
+}
+
+fieldset{
+	border-radius: 20px;
+}

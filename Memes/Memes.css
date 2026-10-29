@@ -1,0 +1,26 @@
+body{
+	background-color:rgb(41,41,41);
+	color:white;
+}
+
+img{
+	width: 500px;
+}
+
+
+fieldset, div{
+	background: black;
+	border-radius: 10px;
+	border-style: groove;
+	font-size: 15px;
+	border-radius: 10px
+}
+
+legend{
+	font-size: 30px;
+	text-shadow: 0 0 5px white;
+}
+
+div{
+	margin-top: 20px;
+}

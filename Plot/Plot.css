@@ -1,0 +1,40 @@
+body{
+	background-color:rgb(41,41,41);
+	color:white;
+}
+
+@font-face {
+    font-family: font;
+    src: url("../OPTICopperplate-Heavy.otf")
+}
+
+fieldset{
+	font-family: "Times New Roman", Times, serif;
+	text-align: justify;
+	font-size: 1.25em;
+	margin-right: 37%;
+	background: black;
+	background: radial-gradient(circle, rgba(19,19,19,1) 0%, black 100%);
+	padding: 10px;
+	border-radius: 10px;
+	border-style: groove;
+}
+
+legend{
+	font-family: font;
+	font-size: 2em;
+	text-shadow: 0 0 10px white;
+}
+
+img.Poster{
+	width:40em;
+	float: right;
+	margin: 20px;
+	border: 10px;
+	border-radius: 10px;
+	border-style: groove;
+}
+
+h2,h1{
+	text-shadow: 0 0 5px gray;
+}

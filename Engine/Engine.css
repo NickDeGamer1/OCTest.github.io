@@ -1,0 +1,48 @@
+body{
+	background-color:rgb(41,41,41);
+	color:white;
+}
+
+@font-face {
+    font-family: font;
+    src: url("../OPTICopperplate-Heavy.otf")
+}
+
+fieldset{
+	font-family: "Times New Roman", Times, serif;
+	font-size: 1.25em;
+	text-align: justify;
+	background: radial-gradient(circle, rgba(19,19,19,1) 0%, black 100%);
+	padding: 10px;
+	border-radius: 10px;
+	border-style: groove;
+}
+
+legend{
+	font-family: font;
+	font-size: 2em;
+}
+
+#Nickel{
+	width: 20em;
+	background-color: rgb(41,41,41);
+	border-radius: 10px;
+	float: right;
+	margin: 10px;
+}
+
+#Jestr{
+	width: 15em;
+	background-color: rgb(41,41,41);
+	border-radius: 10px;
+	float: left;
+	margin: 10px;
+}
+
+legend,h2,h1{
+	text-shadow: 0 0 5px gray;
+}
+
+note{
+	font-size:.75em;
+}

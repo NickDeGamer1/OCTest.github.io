@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Engine</title>
+	<meta charset="utf-8">
+	<link href="Engine.css" rel="stylesheet" />
+	<link href="../ocNav.css" rel="stylesheet" />
+	<link rel="icon" type="image/x-icon" href="../Original_Campaign_Logo.png">
+</head>
+
+<img class="title" alt="Original Campaign" src="../title.jpg">
+
+<body>
+	<script src="dynamic.js"></script>
+	<header>
+		<ul>
+			<li><a href="../index.html">Homepage</a></li>
+			<li><a href="../Plot/Plot.html">What is O.C.?</a></li>
+			<li><a href="../Characters/Characters.html">Characters</a></li>
+			<li><a href="../Worlds/Worlds.html">Worlds</a></li>
+			<li><a href="../Engine/Engine.html">Engine</a></li>
+			<li><a href="../Memes/Memes.html">Memes</a></li>
+		</ul>
+	</header>
+
+	<fieldset>
+
+	<legend>Engine</legend>
+
+		<p>While loosley based off the D&D5e, the OC engine is built from the ground up. Generally, Version 1 of the OC engine is focused on simplicity and accessibility, while retaining the fun of a D&D campaign. Let’s start off with making a character. </p>
+
+		<video width="100%" controls>
+			<source src="NICk.mp4" type="video/mp4">
+		</video>
+
+		<h1>Character Sheet</h1>
+
+		<p>
+			The character sheet (as provided <a href="OC Character Sheet.pdf" target="_blank">here</a>) is made to tailor to all kinds of characters.
+
+		</p>
+		<ol>
+			<li>First, we start off with the names of the character and the player, simple enough. </li>
+
+			<li>Second, we put a drawing of this character. it doesn’t have to be a drawing if a game screenshot works better. </li>
+
+			<li>
+				Next, we choose an alignment, the two ranges are Lawful-Chaotic and Good-Evil. The Lawful-Chaotic range is based off what rules the character follows, if they follow the rules of the land, they are lawful, if they follow their own rules, they are chaotic. The Good-Evil scale is self-explanatory. If not, then here’s a thought experiment: The character finds a loose shopping cart in a parking lot.
+
+				<ul>
+					<li>Good will bring the shopping cart to the store</li>
+					<li>Neutral will put the shopping cart back in the corral</li>
+					<li>Evil will add another shopping cart</li>
+				</ul>
+			</li>
+
+			<li>Up next is to create a summary (HP is determined later), this just gives a description of what the character is all about. This can include Physical description, background, friends, foes, etc.</li>
+
+			<img alt="I can read guys, honest!" id="Nickel" src="Nickel trying to read.gif">
+
+			<li>
+				Next up, Stats. These are the values that will show your character’s strengths and weaknesses. You are given 30 points to spread across 7 stats. these stats include:
+				<ul>
+					<li>HP (hit points) </li>
+					<li>Strength (Attack multiplier) </li>
+					<li>Defense (Determines how much shield you have) </li>
+					<li>Speed (determines initiative) </li>
+					<li>Charisma (determines Interactions with NPCs) </li>
+					<li>Perception (How well you can perceive your environment) </li>
+					<li>Endurance (How many items you can carry) </li>
+				</ul>
+				Try and prioritize what your character is good at.
+			<li>
+				Next are attacks, these are things your character can do in battle. there are four types of attacks:
+				<ul>
+					<li>Light - Does half damage, but can be done twice in one turn</li>
+					<li>Normal - can be done once, does normal damage</li>
+					<li>Heavy - does 2x damage normally, takes 2 rotations to complete and can be interrupted</li>
+					<li>Stat - can change the status of a player or enemy</li>
+				</ul>
+				<note>Note, an attack can have a status effect as well, however it must only have a chance of occurring and have a % damage decrease to balance (the more likely it is to occur, the more % of the attack is taken off.)</note>
+			<li>After that we have passive skills, these are things the character can do outside of combat. These require a d20 roll when used. </li>
+			<li>Almost done! We now have the ultimate. This is a once per session move that your character can do. (Note that once per session means only one player can use the ultimate per session) this can be as broken as possible, however it must also have a failure description that can be equally as punishing. </li>
+			<li>Finally, we have inventory. The number of inventory slots that your character has is based off the Endurance stat. Of course, you can put any items that are a part of the characters lore in there as well. </li>
+		</ol>
+
+		<p>Great! now that we have a character, lets explain How the OC engine works.</p>
+
+		<h1>General Roleplay</h1>
+
+		<img alt="Jestr having a bad day..."id="Jestr" src="Jestr rolling a nat1.gif">
+
+		<p>Roleplay element is very simple, act as if you were the character. Your character's actions are determined by the roll of a d20 (or 20-sided die). If the action is something relating to searching, persuading or physical strength, you add the appropriate stat to the roll. The higher the roll, the more likely it is to succeed. If you roll a 1, it is an automatic failure, sometimes this puts the characters in a worse situation. If the character rolls anywhere between a 2 and 19, how high the number is determining how successful it is. Maybe you have a success number that the player must reach to achieve that goal, If it doesn’t reach that but is above a 1, then describe how it didn’t succeed, but with no harm or fowl. If the player rolls a 20, hooo boy! It’s best to let the player describe the events as they have full control of the story for a few moments. Roleplay is fun with the right people, just make sure to remember it is just a game at the end of the day. </p>
+
+		<br><br><br><br><br><br><br><br><br>
+
+		<h1>Combat</h1>
+
+		<p>
+			Combat is handled like so:<br>
+			First Initiative is rolled, everyone rolls a d20 and adds their speed stat. Once that’s been calculated, you create an order of attack. This order goes from highest roll to lowest roll. Then the combat begins. Once it is your turn you choose an attack to do and who to hit. Depending on the attack, you do the following.
+		</p>
+		<ul>
+			<li>Light - You roll d10s and multiply your strength stat for your damage output (1 = fail, 2-5 = 25%, 6-9 = 50% 10 = 100%), you can roll 1 and do a bonus action or 2 for max damage</li>
+			<li>Normal - You roll 1 d20 and multiply for damage (1 = fail, 2-10 = 50%, 11-19 = 100%, 20 = 200%) </li>
+			<li>Heavy - You roll a d40 (or add 2 d20s) on your next turn and multiply for damage (1-2 = fail (how?), 3-19 = 100%, 20-39 = 200%, 40 = 400% (again, how?)) </li>
+			<li>Stat - You roll a d8 and have your chances labeled on your character sheet on whether it works or not. </li>
+		</ul>
+		<note>(Note, this was done with a calculating program, v2 of this engine is in development and will have better combat)</note>
+
+		<h2>The final thing to mention is that, just like D&D you are able to homebrew this engine in anyway if you feel the need to do so. Just make sure to follow <a href="OGL.pdf" target="_blank">our OGL</a>.</h2>
+	</div>
+</body>
+
+
+
+
